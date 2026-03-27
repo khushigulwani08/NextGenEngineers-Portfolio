@@ -1,16 +1,68 @@
-# React + Vite
+# Khushi Gulwani Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **personal portfolio website** built with **React**, showcasing my skills, projects, and contact information. It features **AWS Cognito authentication**, **dark/light theme toggle**, and interactive sections with animations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+- **Frontend:** React, Tailwind CSS, Framer Motion  
+- **Authentication:** AWS Cognito (Email verification & login)  
+- **Icons & Animations:** Lucide React, React Icons, Framer Motion  
+- **Hosting:** Local / Optional deployment on AWS / Netlify / Vercel  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Authentication:**
+   - Sign up with username, email, and password.
+   - Email verification using Cognito.
+   - Login functionality.
+
+2. **Portfolio Sections:**
+   - **Hero Section:** Introduction with profile image and role.
+   - **About Me:** Personal bio, motivation, and technical interests.
+   - **Skills:** Showcasing technical skills with animated progress bars.
+   - **Projects:** Interactive cards with project details and links.
+   - **Contact:** Links to GitHub, LinkedIn, and a contact form.
+   - **Resume Download:** Button to download resume directly.
+   - **Dark/Light Mode:** Toggle theme.
+
+3. **Logout:** Button in the header returns the user to the login/signup page.
+
+---
+
+## Project Structure
+
+
+portfolio/
+├── src/
+│ ├── App.jsx # Main React component with login & portfolio
+│ ├── index.js # React entry point
+│ └── assets/ # Images, resume PDF
+├── public/
+│ └── index.html
+├── package.json
+└── README.md
+
+
+---
+
+##  How to Run Locally
+
+1. **Clone the repository:**
+
+```bash
+git clone <your-repo-url>
+cd portfolio
+Install dependencies:
+npm install
+Start the development server:
+npm start
+Open the app in your browser:
+http://localhost:3000
+Login:
+Use any registered email & password (if using Cognito)
+
+Live Video URL: "https://drive.google.com/file/d/1jMPRA6lauV46dS9Lj1jDQE9hqCZ5JUNM/view?usp=sharing"
